@@ -1,0 +1,385 @@
+<!---  
+Name: DigitKart 
+Developer name: Avigher
+Company: Avigher Technologies <http://avigher.com>
+Version: 6.0
+last updated: 08-02-2019 
+---->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>DigitKart Multivendor Digital Products Marketplace</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+		.img-responsive{ max-width:1100px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;DigitKart&rdquo; Documentation by &ldquo;Avigher Technologies&rdquo; v6.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;DigitKart&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 17/10/2018<br>
+					By: Avigher<br>
+					Email: <a href="mailto:avigher@hotmail.com">avigher@hotmail.com</a><br/>
+                    Skype: avigher@hotmail.com
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my script. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="https://codecanyon.net/user/avigher" target="_blank">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#installation">Installation</a></li>
+				<li><a href="#avigher_settings">Settings</a></li>
+                <li><a href="#avigher_category">Category & Subcategory</a></li>
+				
+                
+				<li><a href="#avigher_product">Product Item</a></li>
+                <li><a href="#avigher_withdraw">Withdraw</a></li>
+                
+                <li><a href="#avigher_customers">Dispute</a></li>
+				<li><a href="#avigher_vendors">Users</a></li>
+				
+				<li><a href="#avigher_blog">Blog</a></li>
+                
+                
+                
+                <li><a href="#avigher_pages">Pages</a></li>
+                
+                <li><a href="#avigher_slideshow">Newsletter</a></li>
+                
+                
+                
+                <li><a href="#avigher_login">Login & Register</a></li>
+                
+                <li><a href="#avigher_forgot">Forgot Password</a></li>
+                <li><a href="#avigher_myaccount">My Account</a></li>
+                <li><a href="#avigher_shop">Product Items</a></li>
+                <li><a href="#avigher_product_details">Product Item Details</a></li>
+                <li><a href="#avigher_cart">Cart</a></li>
+                <li><a href="#avigher_checkout">Checkout</a></li>
+                <li><a href="#avigher_myproduct">My Products & My Orders</a></li>
+                <li><a href="#avigher_myshopping">My Shopping</a></li>
+                <li><a href="#avigher_attributes">My Earnings </a></li>
+                <li><a href="#avigher_support">Support</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="installation"><strong>A) Installation</strong> - <a href="#toc">top</a></h3>
+		
+        <strong>Step 1:</strong>
+				 <p>Upload main zip into your hosting & then extract that zip file in same directory.</p>				 
+				 <strong>Step 2:</strong>
+				 <p>Then create a database and import SQL file into it. SQL file available in "database" folder
+                 
+                 <br/><br/><strong> Two types of sql file available :</strong><br/> 1. with demo content sql file <br/> 2. without demo content sql file</p>
+			  
+			 
+			<img src="images/1.png" alt="" class="img-responsive" />
+            <br/><br/>
+            <strong>Step 3:</strong>
+		    <p>Open <strong>.env</strong> its available in <strong>local </strong> folder & then change hostname, database name & password.</p>
+            <img src="images/2.png" alt="" class="img-responsive" />
+            <br/><br/>
+			<p>And Open <strong>database.php</strong> its available in <strong>local/config</strong> folder & then change hostname, database name & password.</p>
+             <img src="images/3.png" alt="" class="img-responsive" />
+             <br/><br/>
+             <strong>Step 4:</strong>
+				 <p>Go to Admin panel <b>http://yoursite.com/admin </b></p>
+					<p><b>username: admin </b><br>
+					<b>password: admin</b></p><br/>
+            <img src="images/4.png" alt="" class="img-responsive" />
+        
+        
+		<hr>
+
+		<h3 id="avigher_settings"><strong>B) Settings</strong> - <a href="#toc">top</a></h3>
+
+		<strong>General Settings:</strong><br/><br/>
+				 <p>Then goto here: <b>http://yoursite.com/admin/settings</b></p>
+				 <p>Change site name,logo & favicon, social links and more informations change here.</p>
+                
+            <img src="images/5.png" alt="" class="img-responsive" />
+             <br/> <br/>
+            
+            <strong>Payment Settings:</strong><br/><br/>
+				 <p>Then goto here: <b>http://yoursite.com/admin/payment-settings</b></p>
+				 <p>Change payment option, withdraw option, paypal & stripe settings and more informations change here.</p>
+                 
+            <img src="images/6.png" alt="" class="img-responsive" />
+           <br/><br/>
+            
+            
+            
+            <strong>Media Settings:</strong><br/><br/>
+				 <p>Then goto here: <b>http://yoursite.com/admin/media-settings</b></p>
+				 <p>Mp3,Image size & type change here.</p>
+                 
+            <img src="images/7.png" alt="" class="img-responsive" />
+            <br/><br/>
+            
+            
+            
+            
+      
+          <strong>Promo Box:</strong><br/><br/>
+				 <p>Then goto here: <b>http://yoursite.com/admin/promo</b></p>
+				 <p>home page promo box content change here.</p>
+                 <br/>
+            <img src="images/8.png" alt="" class="img-responsive" />
+     <br/><br/>
+
+		
+
+		<hr>
+		
+		<h3 id="avigher_category"><strong>C) Category & Subcategory</strong> - <a href="#toc">top</a></h3>
+		
+		 <p>1. Go to admin panel > category</p>
+				<p>2. Here you can view, add, edit, delete, search category & subcategory</p><br/>
+				 <img src="images/9.png" alt="" class="img-responsive" />
+                 
+                 <img src="images/10.png" alt="" class="img-responsive" />
+            <br/><br/>
+		
+		<hr>
+		
+		<h3 id="avigher_product"><strong>D) Product Item</strong> - <a href="#toc">top</a></h3>
+		
+		<p>1. Go to admin panel > product item</p>
+				 <p>2. Here you can view, approve, unapprove, delete, search for vendor products</p><br/>
+                 
+            <img src="images/11.png" alt="" class="img-responsive" />
+            <br/><br/>
+            
+            
+            
+           
+            
+            
+             <strong>Product Item Orders:</strong><br/><br/>
+				 <p>1. Then goto here: <b>http://yoursite.com/admin/orders</b></p>
+				 <p>2. Here you can view, approve, search for customer product orders</p>
+                 <br/>
+            <img src="images/12.png" alt="" class="img-responsive" />
+             <br/><br/>
+            
+            <strong>Ratings & Reviews:</strong><br/><br/>
+				 <p>1. Then goto here: <b>http://yoursite.com/admin/rating</b></p>
+				 <p>2. Here you can view, delete, search for product ratings & reviews</p>
+                
+            <img src="images/13.png" alt="" class="img-responsive" />
+              <br/><br/
+		
+		<hr>
+        
+        
+        <h3 id="avigher_withdraw"><strong>E) Withdraw</strong> - <a href="#toc">top</a></h3>
+        
+        <p>1. Go to admin panel > withdraw</p>
+           
+				 
+                 
+            <img src="images/14.png" alt="" class="img-responsive" />
+            
+            
+        <br/><br/>
+        
+        <hr>
+        <h3 id="avigher_customers"><strong>F) Dispute</strong> - <a href="#toc">top</a></h3>
+        
+         <p>1. Go to admin panel > dispute refund request</p>
+				 <p>3. Here you can view, payment transfer & release, search refund request</p><br/>
+                 <br/>
+           
+            <img src="images/15.png" alt="" class="img-responsive" />
+        <br/><br/>
+        
+         <hr>
+        <h3 id="avigher_vendors"><strong>G) Users</strong> - <a href="#toc">top</a></h3>
+        
+         <p>1. Go to admin panel > users</p>
+				 <p>3. Here you can view, add, edit, delete, search users</p><br/>
+                 
+           
+            <img src="images/16.png" alt="" class="img-responsive" />
+            <br/><br/>
+         <hr>
+        <h3 id="avigher_blog"><strong>H) Blog</strong> - <a href="#toc">top</a></h3>   
+            
+         <p>1. Go to admin panel > blog</p>
+				 <p>3. Here you can view, add, edit, delete, search & comments blog</p><br/>
+                 <br/>
+           
+            <img src="images/17.png" alt="" class="img-responsive" />
+            
+            
+         <hr>
+        <h3 id="avigher_pages"><strong>I) Pages</strong> - <a href="#toc">top</a></h3>      
+           <p>1. Go to admin panel > pages</p>
+				 <p>3. Here you can view, add, edit, delete, search & dynamic pages</p><br/>
+                 
+           
+            <img src="images/18.png" alt="" class="img-responsive" />
+            <br/><br/>
+            
+      <hr>
+        <h3 id="avigher_slideshow"><strong>J) Newsletter</strong> - <a href="#toc">top</a></h3>       
+           <p>1. Go to admin panel > newsletter</p>
+				 <p>3. Here you can view, add, edit, delete, search for newsletter</p><br/>
+                 
+           
+            <img src="images/19.png" alt="" class="img-responsive" />
+            <br/><br/>
+            
+       
+          <hr>
+        <h3 id="avigher_login"><strong>K) Login & Register</strong> - <a href="#toc">top</a></h3>   
+            <strong>Login</strong>	<br/><br/>  
+			<p>1. Click login link</p>
+				  <p>2. Enter your registered email address and password login to my account page</p>
+                 
+            <img src="images/4.png" alt="" class="img-responsive" />
+            <br/><br/>
+            <strong>Register</strong><br/> <br/>	
+            <p>1. Click register link</p>
+				  <p>2. Enter your username,email address,password,phone number, gender and country to register and go to my account page</p>
+            <img src="images/20.png" alt="" class="img-responsive" />
+            <br/> <br/>
+            
+             <hr>
+        <h3 id="avigher_forgot"><strong>L) Forgot Password</strong> - <a href="#toc">top</a></h3>  
+            
+            <p>1. Click forgot-password link</p>
+				  <p>2. Enter your registered email address and you can get change password link via registered email</p>
+            <img src="images/21.png" alt="" class="img-responsive" />
+            <br/>
+                 <br/>
+            <hr>
+        <h3 id="avigher_myaccount"><strong>M) My Account</strong> - <a href="#toc">top</a></h3>  
+            <p>1. Change your profile photo,username,email address,password,phone number,gender,country via my account</p>
+                 
+                 
+            <img src="images/22.png" alt="" class="img-responsive" /> 
+            <br/><br/>
+            
+            
+            <hr>
+        <h3 id="avigher_shop"><strong>N) Product Items</strong> - <a href="#toc">top</a></h3>
+           <p>1. Product item page you can filter category,price range,rating,search text here</p>
+                 
+                 
+            <img src="images/23.png" alt="" class="img-responsive" />
+            <br/><br/>
+            
+              
+           <hr>
+        <h3 id="avigher_product_details"><strong>O) Product Item Details</strong> - <a href="#toc">top</a></h3> 
+         <p>1. view product details</p>
+				 
+                  
+                 
+              <img src="images/24.png" alt="" class="img-responsive" /> 
+        <br/><br/>
+        
+        
+         <hr>
+        <h3 id="avigher_cart"><strong>P) Cart</strong> - <a href="#toc">top</a></h3> 
+          <p>1. Your cart details here</p>
+				 
+                  
+                 
+              <img src="images/25.png" alt="" class="img-responsive" />  
+              <br/><br/>
+              
+             <hr>
+        <h3 id="avigher_checkout"><strong>Q) Checkout</strong> - <a href="#toc">top</a></h3>  
+              <p>1. product checkout details and payment mode here</p>
+				 
+                  
+                
+              <img src="images/26.png" alt="" class="img-responsive" />  
+               <br/> <br/>
+             <hr>
+        <h3 id="avigher_myproduct"><strong>R) My Product Items & My Orders</strong> - <a href="#toc">top</a></h3>   
+              
+          <p>1. View all your products here</p>
+			<p>2. add, edit, delete your product item here</p>
+            
+                  
+                 
+              <img src="images/27.png" alt="" class="img-responsive" /><br/><br/>
+              
+              
+              <strong>My Orders</strong><br/><br/>
+             <p>1. View all your product items orders for customer here</p>
+            
+			
+                  
+                 
+              <img src="images/28.png" alt="" class="img-responsive" />      
+            <br/><br/>
+            
+            <hr>
+        <h3 id="avigher_myshopping"><strong>S) My Shopping</strong> - <a href="#toc">top</a></h3> 
+            
+             <p>1. View all my shpping product items here</p>
+				 
+                  
+                 
+              <img src="images/29.png" alt="" class="img-responsive" />
+               <br/><br/> 
+              
+               <hr>
+        <h3 id="avigher_attributes"><strong>T) My Earnings</strong> - <a href="#toc">top</a></h3> 
+        
+        <p>1. View my earning balance & withdraw here</p>
+				 
+                  
+                 
+              <img src="images/30.png" alt="" class="img-responsive" />  
+        <br/><br/>
+        
+        
+        
+              
+              
+               <hr>
+        <h3 id="avigher_support"><strong>U) Support</strong> - <a href="#toc">top</a></h3> 
+        
+        
+		
+		<p>If you need help, please feel free to contact us! All issues, requests and questions can be discussed and answered at our Support Team.</p>
+			<p>For any customization (or) custom jobs contact us through <a href="mailto:avigher@hotmail.com">avigher@hotmail.com</a> (or) skype: <b>avigher</b> (or) <a href="http://avigher.com/support/">http://avigher.com/support</a></p>
+		
+		<p class="append-bottom alt large"><strong>Avigher Technologies</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
